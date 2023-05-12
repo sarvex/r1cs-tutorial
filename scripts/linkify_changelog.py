@@ -20,7 +20,7 @@ if len(sys.argv) < 2:
     exit()
 
 changelog_path = sys.argv[1]
-if repo_name == "":
+if not repo_name:
     path = os.path.abspath(changelog_path)
     components = path.split(os.path.sep)
     repo_name = components[-2]
